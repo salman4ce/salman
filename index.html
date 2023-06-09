@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Exploring Salman's Digital Canvas</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo"><span>My</span>Workfolio.</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h3>Hey,</h3>
+            <h2>I am <span id="text">Salman</span></h2>
+            <p>A self taught UI/UX designer seeking a position 
+            where i can apply my creative design skills,passion 
+            for user-centered design, and technical proficiency 
+            to create intuitive,user-friendly, and visually appealing 
+            digital products that meet business goals and user needs.<br> <br></p>
+            <a href = "C:\Users\Salman Basheer\Documents\Salman UI\Web Portfolio\SalmanUIUX.docx" download = "SalmanUIUX.docx">
+            <button>Hire Me</button>
+            <button class="chat"><ion-icon name="logo-wechat"></ion-icon><a style="text-decoration:none" href="mailto:salmanbasheer05@gmail.com">  Communicate Corner</a></button>
+        </div>
+        <ul class="social">
+         <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+         <li><a href="https://instagram.com/winger_no.5?igshid=NGExMmI2YTkyZg=="><ion-icon name="logo-instagram"></ion-icon></a></li>
+         <li><a href="https://www.behance.net/salmanbasheer2"><ion-icon name="logo-behance"></ion-icon></a></li>
+         <li><a href="https://www.linkedin.com/in/salman-basheer-a35b55151"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+        <div class="dayNight">
+            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+        <img src="cc.png" class="bubble">
+        <img src="ss1.png" class="men">
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        let typingText= new Typed("#text",{
+            strings: ["Salman","Engineer","Designer","Coder"],
+            loop:true,
+            typeSpeed:100,
+            backSpeed:50,
+            backDelay:1000,
+        })
+        let banner=document.querySelector('.banner');
+        let dayNight=document.querySelector('.dayNight');
+        dayNight.onclick=function(){
+            banner.classList.toggle('night');
+        }
+    </script>
+</body>
+</html>
